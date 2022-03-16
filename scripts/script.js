@@ -46,7 +46,6 @@ const ICON = 'icon';
 
          }else{
              let iconElementBack = document.createElement('img');
-             iconElementBack.classList.add(ICON);
              iconElementBack.src = "./assets/akat.png";
              cardElementFace.appendChild(iconElementBack)
 
@@ -57,5 +56,20 @@ const ICON = 'icon';
    createCardsFromPerson(persons);
 
     function flipCard(){
-     this.classList.add("flip");
+        if(game.setCard(this.id)){
+
+        this.classList.add("flip");
+        if(game.checkMatch()){
+            game.clearCards();
+        }else{
+           setTimeout(()=>{
+            let firstCardView = document.getElementById(game.firstCard.id);
+            let secondCardView = document.getElementById(game.secondCard.id);
+            
+            firstCardView.classList.remove("flip");
+            secondCardView.classList.remove("flip");
+        }, 1000);    
+    }
+    }
+
     }
