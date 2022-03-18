@@ -5,9 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akatsuki MemoryGame</title>
+    <link rel="stylesheet" type="text/css" href="./css/hover.css">
+    <link rel="stylesheet" type="text/css" href="./css/demo-page.css">
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    
+    <div id="gamePlay">
+      <div> Akatsuki MemoryGame</div>
+      <button id="inicio" class="hvr-buzz" onclick="iniciar()">Start Game</button>
+     <br><br><br><br> <p>Create by @euiarleymatheus :)</p>
+    </div>
+    
     <div id="gameBord">
       <!-- <div id="" class="card" data-icon="deidara">
         <div class="card_front">
@@ -28,12 +37,16 @@
         </div>
       </div> -->
     </div>
-
+    <div id="audio">
+      <audio id="narutomusic">
+        <source src="./assets/narutomusic.mp3">
+      </audio>
+    </div>
     <div id="gameOver">
       <div>Congrats, you won!</div>
       <button id="restart" onclick="restart()">Play again</button>
     </div>
-     
+
     <script src="./scripts/game.js"></script>
     <script src="./scripts/script.js"></script>
   </body>

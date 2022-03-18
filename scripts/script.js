@@ -4,6 +4,7 @@ const CARD = "card";
 const ICON = "icon";
 
 startGame();
+play();
 
 function startGame() {
   initializeCards(game.createCardsFromPerson());
@@ -45,7 +46,7 @@ function createCardFace(face, card, element) {
 
 function flipCard() {
   if (game.setCard(this.id)) {
-    this.classList.add("flip");
+    this.classList.add("flip")
     if (game.secondCard) {
       if (game.checkMatch()) {
         game.clearCards();
@@ -74,3 +75,11 @@ function restart(){
 
 
 }
+function iniciar(){
+  let initialLayer = document.getElementById("gamePlay");
+   initialLayer.style.display = "none"
+  let gameLayer = document.getElementById("gameBord");
+  gameLayer.style.display = "grid";
+  document.getElementById("narutomusic").play()
+}
+

@@ -1,3 +1,5 @@
+let musica = document.getElementById("naruto")
+
 let game = {
   lockMode: false,
   firstCard: null,

@@ -2,10 +2,16 @@
 *{
     margin: 0;
     padding: 0;
+    padding: 0;
 
 }
+p{
+    font-family: 'Acme', sans-serif;
+    font-size: small;
 
+}
 body{
+    
     font-family: 'Acme', sans-serif;
     display: flex;
     justify-content: center;
@@ -16,12 +22,12 @@ body{
 }
 img{
     border-radius: 30px;
-    height: 130px;
-    width: 130px;
+    height: 110px;
+    width: 110px;
 }
 .card{
-width: 100px;
-height: 100px;
+width: 120px;
+height: 120px;
 position: relative;
 
 transform-style: preserve-3d;
@@ -75,12 +81,107 @@ display: none;
     border: none;
     font-family: font-family: 'Acme', sans-serif,
 }
+#inicio{
+    color: aliceblue;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color:rgb(199, 12, 12);
+    border: none;
+    font-family: font-family: 'Acme', sans-serif;
+    margin-top: 30px;
     
+
+    
+}
 #gameBord{
  background-color: tomato;
  max-width: 700px;
+ height: 100%;
  display: grid;
  grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
- gap: 40px;
+ gap: 15px;
+ display:none;
 
+}
+#audio{
+    display: none;
+}
+
+#gamePlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.884);
+    height: 100%;
+    width: 100%;
+    color: rgb(253, 254, 255);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0%;
+    bottom: 0%;
+    }
+@media screen and (max-width: 400px) {
+    img{
+        border-radius: 30px;
+        height: 70px;
+        width: 70px;
+    }
+    
+    #gamePlay{
+        position: absolute;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        color: rgb(253, 254, 255);
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 20px;
+        }
+    .card{
+        width: 90px;
+        height: 90px;
+        position: relative;
+        margin-bottom: 5px;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+        }
+
+        #gameBord{
+            background-color: tomato;
+            max-width: 400px;
+            max-height: 100%;
+            display: grid;
+            grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+            gap: 5px;
+            display: none;
+           
+           }
+           #restart{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color:rgb(255, 16, 16);
+            border: none;
+            font-family: font-family: 'Acme', sans-serif,;
+            margin-top: 20px;
+        }
+        #gameOver{
+            position: absolute;
+            background-color: rgb(0, 0, 0, 0.9);
+            height: 100%;
+            width: 100%;
+            color: rgb(253, 254, 255);
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            top: 0%;
+            display: none;
+            }
 }
