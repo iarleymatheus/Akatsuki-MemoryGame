@@ -80,6 +80,7 @@ function iniciar(){
    initialLayer.style.display = "none"
   let gameLayer = document.getElementById("gameBord");
   gameLayer.style.display = "grid";
-  document.getElementById("narutomusic").play()
+  document.getElementById("narutomusic").play().
+  document.getElementById("narutomusic").loop = true;
 }
 

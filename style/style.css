@@ -53,6 +53,7 @@ transition: transform .5s;
 .card_front{
     transform: rotateY(180deg);
     background-color: black;
+    
 }
 .card_back{
 background-color: black;
@@ -143,10 +144,10 @@ display: none;
         top: 20px;
         }
     .card{
+        margin: 0%;
         width: 90px;
         height: 90px;
-        position: relative;
-        margin-bottom: 5px;
+        position: relative; 
         transform-style: preserve-3d;
         transition: transform .5s;
         }
@@ -158,6 +159,8 @@ display: none;
             display: grid;
             grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
             gap: 5px;
+            margin: 0%;
+           
             display: none;
            
            }
